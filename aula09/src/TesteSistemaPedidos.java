@@ -7,7 +7,7 @@ public class TesteSistemaPedidos {
 
         pedido1.addProduto(p1);
         pedido1.addProduto(p2);
-        pedido1.getProdutos().remove(p1);
+        //pedido1.getProdutos().remove(p1);
 
         double valor = pedido1.calcularValorTotal();
         System.out.println("Total do pedido: " + valor);

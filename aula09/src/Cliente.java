@@ -1,13 +1,15 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Cliente {
     private String nome;
     private String cpf;
-    private List<Pedido> pedido;
+    private List<Pedido> pedidos;
 
     public Cliente(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
+        this.pedidos = new ArrayList<Pedido>();
     }
 
     public String getNome() {
@@ -27,6 +29,6 @@ public class Cliente {
     }
 
     public void addPedido(Pedido pedido){
-        this.pedido.add(pedido);
+        this.pedidos.add(pedido);
     }
 }
